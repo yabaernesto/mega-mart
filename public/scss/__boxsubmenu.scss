@@ -8,8 +8,10 @@
 
     .logo {
       h5 {
-        font-size: 28px;
-        color: $text-primary;
+        a {
+          font-size: 28px;
+          color: $text-primary;
+        }
       }
     }
 
