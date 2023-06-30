@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +12,17 @@
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/App.css">
 
-  <title>Login</title>
+  {% block head %}
+    <title>Carrinho</title>
+  {% endblock %}
 </head>
 <body>
-
   <div class="box-menu">
     <!-- menu no top -->
     <div class="container container-xl">
       <div class="box">
         <div>
-          <h5 class="title">
-            <a href="/">Seja bem vindo a MegaMart!</a>
-          </h5>
+          <h5 class="title"><a href="/">Seja bem vindo a MegaMart!</a></h5>
         </div>
 
         <div>
@@ -50,7 +49,6 @@
     </div>
   </div><!-- end box-menu -->
 
-  
   <div class="box-submenu">
     <div class="container container-xl">
       <div class="box">
@@ -70,6 +68,8 @@
             <div class="user-cart">
               <div class="login-logout">
                 <i class="fa fa-user-o" aria-hidden="true"></i>
+                <a href="/auth">Entrar</a>
+                <span>/</span>
                 <a href="/createAccount">Cadastrar-se</a>
               </div>
 
@@ -85,7 +85,8 @@
     </div>
   </div>
   
-  {% block content %}{% endblock %}
+  {% block content %}
+  {% endblock %}
 
   <footer class="box-footer">
     <div class="container">

@@ -1,0 +1,30 @@
+.show-cart {
+  margin-top: 4.5rem;
+  padding: 5px;
+  text-align: center;
+
+  .cart-products {
+    border: 1px solid $text-border;
+    color: $text-second;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+
+  .finalOperation {
+    margin-top: 2rem;
+
+    button.btnFinalizar {
+      padding: 8px;
+      margin-top: 0.5rem;
+      border-radius: 4px;
+      color: $text-one;
+      background-color: $text-primary;
+      transition: all 700ms ease;
+  
+      &:hover {
+        background-color: $text-primary-hover;
+      }
+    }
+  }
+}

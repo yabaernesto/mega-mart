@@ -1,9 +1,29 @@
-{% extends "layout.njk" %}
+{% extends "layout.cart.njk" %}
 {% block head %}
   <title>Carrinho</title>
 {% endblock %}
 {% block content %}
-  <div class="container">
-    
+  <div class="container container-xl">
+    <div class="show-cart">
+      <table class="cart-products">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dinâmico -->
+        </tbody>
+      </table>
+      <div class="finalOperation">
+        <h4>Total: <span id="totalValue">0,000kz</span></h4>
+        <button type="button" class="btnFinalizar" id="finalizarCompra">
+          Finalizar compra
+        </button>
+      </div>
+    </div>
   </div>
 {% endblock %}
