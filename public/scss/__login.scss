@@ -1,19 +1,71 @@
 .box-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  background-color: $bg-final;
+  margin-top: 4.5rem;
+  padding: 20px;
   color: $text-second;
   font-weight: bold;
-  border: 1px solid $bg-primary;
-  box-shadow: 2px 2px 2px $text-second;
+  border: 1px solid $text-border;
+  border-radius: 4px;
+  box-shadow: 1px $text-second;
+
+  h4 {
+    font-size: 14pt;
+    color: $text-primary;
+  }
 
   .form {
     label, button {
       text-transform: uppercase;
+    }
+
+    .btn-log {
+      text-align: center;
+    }
+
+    button {
+      width: 90%;
+      margin: 15px auto;
+      padding: 5px 0;
+      border-radius: 4px;
+      background-color: $text-primary;
+      color: $text-one;
+      transition: all 700ms ease;
+
+      &:hover {
+        background-color: $text-primary-hover;
+      }
+    }
+
+    label {
+      font-size: 10pt;
+      margin-left: 5px;
+    }
+
+    input {
+      display: block;
+      width: 90%;
+      margin: 5px auto;
+      padding: 8px;
+      border: 1px solid $text-border;
+      border-radius: 4px;
+    }
+
+    .option {
+      display: flex;
+      justify-content: space-around;
+      transition: all 700ms ease;
+
+      h5 {
+        a {
+          font-size: 11pt;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 }

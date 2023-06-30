@@ -1,9 +1,46 @@
-{% extends "layout.njk" %}
-{% block head %}
-  <title>Criar conta</title>
-{% endblock %}
+{% extends "layout.createAccount.njk" %}
+
 {% block content %}
-  <div class="container">
-    
+  <div class="container container-xl">
+    <div class="box-form">
+      <h4>Informe os dados</h4>
+      <form class="form" action="/login" method="post">
+        <label for="nome">Nome</label>
+        <input 
+          type="text" 
+          name="nome" 
+          id="nome"
+          placeholder="Digite seu nome"
+        >
+
+        <label for="email">E-mail</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email"
+          placeholder="Digite seu e-mail"
+        >
+
+        <label for="senha">Senha</label>
+        <input 
+          type="password" 
+          name="senha" 
+          id="senha"
+          placeholder="Digite sua senha"
+        >
+
+        <label for="tel">Tel</label>
+        <input 
+          type="number" 
+          name="tel" 
+          id="tel"
+          placeholder="Digite seu telefone"
+        >
+
+        <div class="btn-log">
+          <button type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </div>
   </div>
 {% endblock %}

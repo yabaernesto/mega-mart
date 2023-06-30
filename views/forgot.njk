@@ -1,0 +1,22 @@
+{% extends "layout.forgot.njk" %}
+
+{% block content %}
+  <div class="container container-xl">
+    <div class="box-form">
+      <h4>Digite seu e-mail</h4>
+      <form class="form" action="/login" method="post">
+        <label for="email">E-mail</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email"
+          placeholder="Digite seu email"
+        >
+
+        <div class="btn-log">
+          <button type="submit">Pesquisar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
